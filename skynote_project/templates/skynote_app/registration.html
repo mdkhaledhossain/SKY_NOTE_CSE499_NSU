@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{% static "css/reg.css"%}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action={% static "../skynote_app/login/"%}>
+            <h1>Sky Note</h1>
+            <div class="input_box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user-account'></i>
+            </div>
+            <div class="input_box">
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="input_box">
+                <input type="text" placeholder="Phone Number">
+            </div>
+            <div class="input_box">
+                <input type="text" placeholder="Country">
+            </div>
+            <div class="input_box">
+                <input type="password" placeholder="Password">
+                <i class='bx bxs-lock'></i>
+            </div>
+
+            <!-- <div class="remember_forgot">
+                <label><input type="checkbox">Remember me</label>
+                
+            </div> -->
+
+            <button type="submit" class="btn">SignUp</button>
+
+            <div class="register_link">
+                <p>Do you have any account? <a href={% static "../skynote_app/login/"%}>LogIn</a></p>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

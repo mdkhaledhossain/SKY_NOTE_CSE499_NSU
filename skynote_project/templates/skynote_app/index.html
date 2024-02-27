@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static "css/style.css"%}">
+
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user">
+            <img  src={% static "images/skynote.png" alt="Picture missing"%} style="width: 110px ; height: 110px; border-radius: 50px; margin-top: 20px"/>
+            <h1>SKY NOTE</h1>
+            <p style="font-size: 35px;">Welcome</p>
+          </div>
+          <div class="links">
+            <div class="link">
+              <img src={% static "images/twitch.png"%} alt="" />
+              <a href={% static "../skynote_app/index/"%}><h2>Home</h2></a>
+            </div>
+            <div class="link">
+              <img src={% static "images/library.png"%} alt="" />
+              <a href={% static "../skynote_app/library/"%}><h2>Library</h2></a>
+          </div>
+            <div class="link">
+              <img src={% static "images/steam.png" %} alt="" />
+              <a href=""><h2>Tasks</h2></a>
+            </div>
+            <div class="link">
+              <img src={% static "images/steam.png" %} alt="" />
+              <a href=""><h2>Blank</h2></a>
+            </div>
+
+            <div class="link">
+              <!-- <img src="./images/logout.png" alt="" /> -->
+              <a href={% static "../skynote_app/login/"%}><h2>Logout</h2></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="content">
+          {% comment %} <form method="POST">
+            <input class="notes__title" type="text" placeholder="Enter a title..." name="title">
+            <textarea class="notes__body" placeholder="Write your note here..." name="note_text" rows="11"></textarea>
+            <button class="notes__add"  type="button">Add Note</button>
+
+          </form> {% endcomment %}
+          <form action="" method="POST">
+            {{ form_note }}
+            {% csrf_token %}
+            <button class="notes__add"  type="submit">Add Note</button>
+          </form>
+        </div>
+        
+      </section>
+    </main>
+    
+  </body>
+</html>

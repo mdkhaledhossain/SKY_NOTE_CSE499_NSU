@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  letter-spacing: 0.15em;
+  box-shadow: 0 0 15px rgb(48, 95, 170);
+
+}
+
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+h2,
+p {
+  color: #396076;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+
+
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.glass {
+  background: white;
+  min-height: 70vh;
+  width: 80%;
+  height: 80%;
+  background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(1rem);
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+/* style="width: 110px ; height: 110px; border-radius: 50px; margin-top: 20px"  */
+
+/* .logo1 {
+  width: 100px;
+  height: 110px;
+  border-radius: 50px;
+  margin-top: 20px;
+} */
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
+.link {
+  display: flex;
+  margin: 1rem 0rem;
+  padding: 1rem 5rem;
+  align-items: center;
+}
+.link h2 {
+  padding: 0rem 2rem;
+}
+
+.pro {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.pro img {
+  position: absolute;
+  right: 5%;
+}
+.pro h2 {
+  width: 40%;
+  color: white;
+  font-weight: 600;
+}
+
+
+/* .content {
+  flex: 2;
+} */
+
+.content {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 2; 
+}
+
+/* Content and status */
+.status {
+  /* margin-top: -4rem;
+  margin-bottom: -4rem; */
+  margin-bottom: 1rem;
+
+}
+
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  width: 50%;
+  height: 50%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  font-size: 15px;
+}
+
+.cards{
+  margin-top: 1rem;
+  width: 100%;
+  height: 350px;
+  overflow: scroll;
+  
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 1rem 0rem;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
+}
+
+
+
+/* This is style section is for input and add_note design in home page */
+
+.notes__preview {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 3em;
+  flex-grow: 1;
+}
+
+.notes__title,
+.notes__body {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.notes__title {
+ 
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  color: #141d299d;
+  font-weight: bold;
+  background-color: #ffffff28;
+  border-radius: 8%;
+}
+
+.notes__body {
+  font-family: "Poppins", sans-serif;
+  flex-grow: 1;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-top: 1.5em;
+  resize: none;
+  color: rgba(0, 0, 0, 0.686);
+  background-color: rgba(152, 241, 238, 0.622);
+  border-radius: 3%;
+}
+
+
+.notes__add {
+  /* background: #05929e;
+  border: none;
+  border-radius: 7px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.15em;
+  font-weight: bold;
+  margin-top: 1em;
+  padding: 0.75em 0;
+  width: 100%; */
+  /* border: none; */
+  cursor: pointer;
+  border-radius: 7px;
+
+  position: relative;
+  background: #6cdbe9;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+
+.notes__add:hover {
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 25px rgb(48, 95, 170);
+}
+
